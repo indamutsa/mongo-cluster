@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf ../mongo-bundle
+
 cat <<EOF > 1-mongodb-configservers.yaml
 # Config server replica set 1
 apiVersion: v1
@@ -738,7 +740,7 @@ spec:
     spec:
       containers:
       - name: setup-rs
-        image: indamutsa/setup-rs:v1.0.3
+        image: indamutsa/setup-rs:v1.0.4
         # command:
         # - /bin/sh
         # - -c

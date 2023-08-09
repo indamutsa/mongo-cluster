@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: setup-rs
-        image: indamutsa/setup-rs:v1.0.3
+        image: indamutsa/setup-rs:v1.0.4
         # command:
         # - /bin/sh
         # - -c

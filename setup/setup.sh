@@ -4,25 +4,25 @@ echo 'Initiating the config server replicaset'
 echo ******************************************
 
 # Wait 10 second and then sleep
-sleep 40 | echo 'Sleeping ... for 40 seconds'
+sleep 120 | echo 'Sleeping ... for 40 seconds'
 
 # Run the the replicaset
 mongo mongodb://mongocfg1 < initConfig.js
 
-# Wait 10 second and then execute the command
-sleep 10 | echo 'Sleeping ...'
+# Wait 5 second and then execute the command
+sleep 5 | echo 'Sleeping ...'
 
 # Initiating the first shard
 mongo mongodb://mongors1n1 < initShard1.js
 
-# Wait 10 second and then sleep
-sleep 10 | echo 'Sleeping ...'
+# Wait 5 second and then sleep
+sleep 5 | echo 'Sleeping ...'
 
 # Initiating the first shard
 mongo mongodb://mongors2n1 < initShard2.js
 
-# Wait 10 second and then sleep
-sleep 45 | echo 'Add shards ...'
+# Wait 30 second and then sleep
+sleep 30 | echo 'Add shards ...'
 
 # Initiating the first shard
 mongo mongodb://mongos1:27017 < addShards.js
