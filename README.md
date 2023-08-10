@@ -180,5 +180,3 @@ kind delete cluster --name mongo-cluster
 **Congratulations!** 🎉 You've successfully deployed a MongoDB sharded cluster on Kubernetes using `kind`. Keep exploring and optimizing your deployments.
 
 ---
-
-I hope this detailed guide aids in deploying and managing your MongoDB cluster on Kubernetes.
